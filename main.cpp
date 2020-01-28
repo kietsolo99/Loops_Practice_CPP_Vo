@@ -7,7 +7,7 @@
 	and/or legitimate user error. 
 	//Try and Catch blocks are used in error checking
 	Teacher: Dr. Tyson McMillan, Ph.D.  
-  STUDENT (McMillanite):
+  STUDENT (McMillanite): Kiet Vo 1_27_20
 */
 #include <cstdlib>  // Provides EXIT_SUCCESS
 #include <iostream>  // Provides cout, cerr, endl
@@ -19,8 +19,45 @@ using namespace std;
 
 int main()
 {
+    int n = 0; //declare and initialize variable
+    //accept input in to "n"
+    cout <<"Please enter your number > ";
+    cin >> n;
+    //PROCESSING  WITH Loops
+    while(n > 0) //While "n" is greater than 0, keep looping
+    {
+      cout << n << ", "; //print current val of n,...exitPoint
+      --n; 
+    }
+    cout <<"FIRE!" << endl;
+
+    //prefix vs. postfix increment (++) or decrement (--)
+    int a = 0, b = 3;
+    a=++b;
+    //a contains 4, b contains  4 (prefix)
+    cout << "a = " << a << "b = " << b << endl;
+    //reset values
+    a = 0, b = 3;
+    a=b++;
+    //a contains 3, b contains 4 (postfix)
+    cout << "a = " << a << "b = " << b << endl;
+    
+
+    //Processing do-while Loop
+    unsigned int z = 0;
+    do //all of this
+    {
+      cout << "Please enter a number (0 to end the code): ";
+      cin >> z;
+      cout <<"You enter "<< z << "\n";
+
+    }while(z !=0); //while has the ";"
+
    //***********Validating int data type******************/
 	int input = 0;
+
+
+
 	input = validateInt(input); //validate my integer by function call, save that value into input
     cout << "You entered valid int: " << input << endl;
     
